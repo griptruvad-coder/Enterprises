@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --env-file-if-exists=.env --watch server.js"
+    "dev": "node --env-file-if-exists=.env --watch server.js",
+    "postinstall": "node scripts/fetch-assets.js"
   },
   "license": "UNLICENSED",
   "dependencies": {
