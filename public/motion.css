@@ -222,3 +222,71 @@ html.js .wa-float.show{opacity:1;transform:none;pointer-events:auto}
   .page-bg .pb-img,.hero-bg{transform:none !important}
   .embers,.cursor-glow{display:none}
 }
+
+/* =====================================================================
+   v3 — lighter warm theme + simple, clean type (feedback: "thoda light, font simple")
+   ===================================================================== */
+:root{
+  --display:"Outfit","Segoe UI",system-ui,sans-serif;
+  --body:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif;
+  --ink:#3a2219;          /* warm terracotta-brown instead of near-black */
+  --panel:#4a2d22;
+  --line:#6b4636;
+  --bone:#fff6ee;
+  --muted:#e2cbbb;
+  --gold:#f0c27a;
+  --copper:#ef6a45;
+  --ember:#ff8c62;
+}
+body{font-family:var(--body);font-size:16px;letter-spacing:0}
+h1,h2,h3,h4,.hero-title,.inv-title,.pl-name,.price,.stat b,.clock b,.donut b,.ai b,.chief h3,.lc h4,.vcard .vtx b,.person h4,.f-brand b,.brand b{font-family:var(--display);letter-spacing:-.01em}
+h1,h2,h3{font-weight:700;line-height:1.08}
+/* no fancy italics: accents are just coloured */
+.it,em,.hero-title .l2,.hero-title .yr,.inv-title em,.pl-name em,.step .n,.bf .n,.track span:nth-child(3n+2),.phead h1 .it{font-style:normal}
+.hero-title{font-size:clamp(46px,7.4vw,108px);font-weight:700;line-height:.98;letter-spacing:-.02em}
+.hero-title .l2{font-weight:700}
+.hero-title .yr{font-size:.5em;font-weight:600}
+.phead h1{font-weight:700}
+.step .n{-webkit-text-stroke:0;color:var(--copper);font-size:44px;font-weight:600}
+.eyebrow{letter-spacing:.16em}
+.links a{font-weight:500}
+.lc h4{font-weight:600}
+.faq summary{font-weight:500}
+
+/* lighter backdrop: more of the building, softer overlays */
+.page-bg{background:#4a2b20}
+.page-bg .pb-img{opacity:.42;filter:saturate(1.1) brightness(1.05)}
+.page-bg .pb-glow{background:
+  radial-gradient(60% 50% at 85% 15%,rgba(255,150,100,.22),transparent 70%),
+  radial-gradient(50% 45% at 5% 70%,rgba(240,194,122,.16),transparent 70%),
+  linear-gradient(180deg,rgba(58,34,25,.45),rgba(58,34,25,.7) 60%,rgba(58,34,25,.78))}
+.hero-bg{opacity:.95}
+.hero::before{background:
+  radial-gradient(70% 60% at 78% 65%,rgba(239,106,69,.25),transparent 70%),
+  linear-gradient(90deg,rgba(58,34,25,.85) 0%,rgba(58,34,25,.45) 50%,rgba(58,34,25,.1) 80%),
+  linear-gradient(180deg,rgba(58,34,25,.4) 0%,transparent 30%,transparent 65%,var(--ink) 100%)}
+.tint{background:linear-gradient(180deg,rgba(74,45,34,.8),rgba(74,45,34,.55))}
+.marquee{background:rgba(74,45,34,.75)}
+.stats{background:rgba(74,45,34,.75)}
+.step,.lc,.bf,.tier,.logo-card,.ev.next,.formcard,.acard,.chief,.profile,.rowcard{background-color:rgba(78,48,36,.82)}
+.phead .bg{opacity:.6}
+.phead::before{background:linear-gradient(180deg,rgba(58,34,25,.35),var(--ink))}
+.contact .bg{opacity:.65}
+.contact::before{background:linear-gradient(180deg,var(--ink),rgba(58,34,25,.55) 40%,rgba(58,34,25,.85))}
+.inv-in{background:radial-gradient(130% 90% at 0% 0%,#5a3424 0%,#3e2419 55%,#2f1b13 100%)}
+.countcard{background:rgba(74,45,34,.85)}
+.nav .wrap::before{background:rgba(70,40,29,.6)}
+.nav.scrolled .wrap::before{background:rgba(70,40,29,.88)}
+.preloader{background:radial-gradient(60% 60% at 50% 50%,#5a3424,#3a2219)}
+footer{background:rgba(48,28,20,.95)}
+.f-small{color:#cdb3a2}
+input[type=text],input[type=email],input[type=tel],input[type=number],input[type=url],input[type=password],select,textarea{background:#2f1b13;border-color:#7a5240}
+.sheet,.menu{background:#45291e;border-color:#7a5240}
+.authtabs,.review div,.signbar,.qty button,.paytabs button,.seg label{background:#2f1b13}
+@media (max-width:760px){
+  .nav .links{background:linear-gradient(180deg,rgba(58,34,25,.93),rgba(58,34,25,.97)),var(--bg-photo),var(--bg-fallback);background-size:cover;background-position:center}
+  .links a:not(.btn){font-family:var(--display);font-size:30px;font-weight:600}
+  body.menu-open .nav .wrap::before{background:rgba(70,40,29,.95)}
+}
+.light{--ink:#fbf3ea;--panel:#ffffff;--bone:#2a1810;--muted:#6e5a4d;--gold:#a8742a;--copper:#c9472a;--line:#ead9c6;background-color:#fbf3ea}
+.hero .hero-title .l2,.hero h1 .l2,.hero h1 .yr{font-style:normal}

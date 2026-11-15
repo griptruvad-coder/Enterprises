@@ -40,3 +40,4 @@ td small{color:var(--muted);display:block}
 .ci-card p{color:var(--muted);margin-top:6px}
 @media (max-width:640px){.pc dl{grid-template-columns:1fr}}
 body.admin .links{position:static;display:flex !important;flex-direction:row;align-items:center;background:none;padding:0;border:0}
+:root{--display:"Outfit","Segoe UI",system-ui,sans-serif;--body:"Plus Jakarta Sans","Segoe UI",system-ui,sans-serif}body{font-family:var(--body)}
