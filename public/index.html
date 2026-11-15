@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Startup Business Summit 2026 · Bharat Mandapam</title>
+<meta name="description" content="Startup Business Summit 2026, 22 December at Bharat Mandapam, New Delhi. Pitch your startup and book your pass.">
+<meta property="og:title" content="Startup Business Summit 2026 · Bharat Mandapam">
+<meta property="og:description" content="Pitch your startup and meet founders, investors and CXOs. 22 December 2026, Bharat Mandapam, New Delhi.">
+<meta property="og:image" content="/img/hero.jpg">
+<meta name="theme-color" content="#0a0807">
+<link rel="icon" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;0,6..96,800;1,6..96,500;1,6..96,700&family=Instrument+Sans:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Startup Business Summit home">
+      <img src="/img/logo.png" alt="Prakhar Enterprises logo">
+      <span><b>SBS 2026</b><small>Bharat Mandapam</small></span>
+    </a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="#home" data-nav="home">Summit</a>
+      <a href="#leaders" data-nav="leaders">Leaders</a>
+      <a href="#partners" data-nav="partners">Collaborators</a>
+      <a href="#pitch" data-nav="pitch">Pitch your idea</a>
+      <button type="button" class="auth-btn" id="signin-btn">Sign in</button>
+      <div class="acct" id="acct" hidden>
+        <button type="button" class="avatar" id="avatar" aria-haspopup="true" aria-expanded="false"><i id="av-init">A</i><span id="av-name">Account</span></button>
+        <div class="menu" id="menu">
+          <div class="who"><b id="menu-name"></b><small id="menu-email"></small></div>
+          <a href="#account">My account</a>
+          <a href="#account" data-scroll="my-passes">My passes</a>
+          <a href="#account" data-scroll="my-pitches">My pitch applications</a>
+          <button type="button" id="signout">Sign out</button>
+        </div>
+      </div>
+      <a href="#tickets" class="btn btn-red" data-nav="tickets">Buy tickets</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<div data-view="home">
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Bharat Mandapam at dusk"></div>
+    <div class="watermark" aria-hidden="true">भारत मंडपम</div>
+    <svg class="oval" viewBox="0 0 1400 520" aria-hidden="true"><ellipse class="o1" cx="700" cy="260" rx="680" ry="210"/><ellipse class="o2" cx="700" cy="260" rx="600" ry="170"/></svg>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow rise d1">Bharat Mandapam · New Delhi</div>
+        <h1 class="rise d2">Startup Business<span class="l2">Summit<span class="yr">’26</span></span></h1>
+        <p class="lede rise d3">India’s business &amp; startup networking summit. Pitch your idea in front of founders, investors and CXOs, all under one roof at Bharat Mandapam.</p>
+        <div class="meta rise d4">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Tuesday, 22 December 2026</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>9:00 AM – 6:00 PM</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Auditorium, Bharat Mandapam, Pragati Maidan</span>
+        </div>
+        <div class="ctas rise d5">
+          <a class="btn btn-red" href="#pitch">Pitch your idea <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="#tickets">Get your pass</a>
+        </div>
+      </div>
+      <aside class="invite rise d4" aria-label="Your invitation to the summit">
+        <div class="float">
+          <div class="inv-card" id="inv-card">
+            <div class="inv-in">
+              <div class="inv-holo" aria-hidden="true"></div>
+              <div class="inv-shine" aria-hidden="true"></div>
+              <div class="inv-head"><span>Invitation</span><span class="live">Passes live</span></div>
+              <div class="inv-emb" aria-hidden="true">
+                <svg viewBox="0 0 300 92"><defs><linearGradient id="cu" x1="0" x2="1"><stop offset="0" stop-color="#8e2a19"/><stop offset=".5" stop-color="#f08a5d"/><stop offset="1" stop-color="#d9ab62"/></linearGradient></defs>
+                  <ellipse cx="150" cy="46" rx="140" ry="38" fill="none" stroke="url(#cu)" stroke-width="1.4"/>
+                  <ellipse cx="150" cy="46" rx="122" ry="29" fill="none" stroke="url(#cu)" stroke-width=".7" opacity=".6"/>
+                  <text x="150" y="55" text-anchor="middle" font-family="Tiro Devanagari Hindi, serif" font-size="26" fill="url(#cu)">भारत मंडपम</text></svg>
+              </div>
+              <div class="inv-title">Startup Business <em>Summit ’26</em></div>
+              <dl class="inv-grid">
+                <div><dt>Date</dt><dd>22 · 12 · 2026</dd></div>
+                <div><dt>Time</dt><dd>09:00 – 18:00</dd></div>
+                <div><dt>Venue</dt><dd>Auditorium, Bharat Mandapam</dd></div>
+                <div><dt>Chief guest</dt><dd>Ms. Rekha Gupta</dd></div>
+              </dl>
+              <div class="inv-perf" aria-hidden="true"></div>
+              <div class="inv-stub">
+                <div><dt>Admit</dt><dd class="inv-name" id="inv-name">Reserved for you</dd><small class="inv-days" id="inv-days"></small></div>
+                <div class="barcode" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-red inv-cta" href="#tickets" id="inv-cta">Claim your pass <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </aside>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track" id="aud-track"></div>
+  </div>
+
+  <section class="sec" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat"><b data-count="600">600<i>+</i></b><span>Business delegates</span></div>
+        <div class="stat"><b data-count="20">20<i>+</i></b><span>Distinguished leaders &amp; investors</span></div>
+        <div class="stat"><b data-count="14">14</b><span>Incubation centres joining</span></div>
+        <div class="stat"><b>9<i>hrs</i></b><span>Of pitches, sessions &amp; networking</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Pitch your idea</div><h2>From a form to the <span class="it">Bharat Mandapam</span> stage.</h2></div>
+        <p>Founders at any stage can apply. Shortlisted startups present live to an audience of investors, founders, CXOs and industry leaders.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="n">01</div><h3>Apply online</h3><p>Tell us about your startup, the problem you solve and what you are raising. It takes about 8 minutes.</p></div>
+        <div class="step"><div class="n">02</div><h3>Get shortlisted</h3><p>The organising team reviews every application and reaches out to shortlisted founders by email and phone.</p></div>
+        <div class="step"><div class="n">03</div><h3>Pitch live</h3><p>Present on 22 December at the Bharat Mandapam auditorium, in front of investors and industry leaders.</p></div>
+        <div class="step"><div class="n">04</div><h3>Build the network</h3><p>Stay for the full day: networking areas, investor conversations and partnership follow-ups.</p></div>
+      </div>
+      <div class="pitch-band">
+        <p>Building something? <span class="it">Put it on stage.</span></p>
+        <a class="btn btn-red" href="#pitch">Start your application</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Distinguished leaders</div><h2>Who’s in <span class="it">the room.</span></h2></div>
+        <p>A chief guest from the Government of Delhi, Shark Tank India judges, founders and investors. <a href="#leaders" style="color:var(--ember)">See all 20 leaders →</a></p>
+      </div>
+      <div id="chief-home"></div>
+      <div class="lgrid" id="confirmed-home"></div>
+    </div>
+  </section>
+
+  <section class="sec vids" id="voices">
+    <div class="wrap vgrid">
+      <div class="vintro">
+        <div class="eyebrow">Video bites</div>
+        <h2>Hear it from <span class="it">the leaders.</span></h2>
+        <p>Messages from the guests joining Startup Business Summit 2026 at Bharat Mandapam. Tap a video to watch it with sound.</p>
+        <a class="btn btn-ghost" href="#leaders">Meet all leaders</a>
+      </div>
+      <div class="vcards" id="vids-home"></div>
+    </div>
+  </section>
+
+  <section class="sec" style="background:#0e0a09;border-block:1px solid var(--line)">
+    <div class="wrap aud">
+      <div class="donut" role="img" aria-label="Audience composition: 70% business delegates and industry professionals, 20% startup ecosystem, 10% aspiring entrepreneurs"><div><span><b>600+</b>Delegates</span></div></div>
+      <div>
+        <div class="eyebrow">The audience</div>
+        <h2 style="font-size:clamp(36px,4.6vw,58px);margin:18px 0 28px">A room built for <span class="it">deals,</span> not just talks.</h2>
+        <div class="audlist">
+          <div class="ai"><b>70%</b><div><h4>Business delegates &amp; industry professionals</h4><p>Business owners, CXOs, angel investors and VCs, MNC representatives, government representatives and decision-makers.</p></div></div>
+          <div class="ai"><b>20%</b><div><h4>Startup ecosystem</h4><p>Startup and early-stage founders, incubators, accelerators and innovation professionals.</p></div></div>
+          <div class="ai"><b>10%</b><div><h4>Aspiring entrepreneurs</h4><p>Young entrepreneurs, aspiring founders and future business leaders.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Events at Bharat Mandapam</div><h2>On the <span class="it">calendar.</span></h2></div>
+        <p>Prakhar Enterprises curates business and startup events at Bharat Mandapam, New Delhi. Here is what’s live and what’s next.</p>
+      </div>
+      <div class="events">
+        <article class="ev">
+          <div class="bg" style="background-image:url(/img/hero.jpg)"></div>
+          <div class="date"><b>22</b><span>Dec 2026</span></div>
+          <span class="tag status">Tickets open</span>
+          <h3>Startup Business Summit 2026</h3>
+          <p>A full day of startup pitches, leadership sessions and curated networking at the Bharat Mandapam auditorium.</p>
+          <div class="row"><a class="btn btn-red" href="#tickets">Buy tickets</a><a class="btn btn-ghost" href="#pitch">Pitch your idea</a></div>
+        </article>
+        <article class="ev next">
+          <div>
+            <div class="eyebrow">Next at Bharat Mandapam</div>
+            <h3 style="margin-top:16px">More summits are being planned for 2027.</h3>
+            <p style="color:var(--muted)">Leave your email and we’ll tell you first when the next event at Bharat Mandapam opens for pitches and passes.</p>
+          </div>
+          <form id="notify-form" novalidate>
+            <div class="notify"><label for="notify-email" class="sr" style="position:absolute;left:-9999px">Email</label><input type="email" id="notify-email" placeholder="you@company.com" required><button class="btn btn-red" type="submit">Notify me</button></div>
+            <div class="okmsg" id="notify-msg" role="status"></div>
+          </form>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Collaborators</div><h2>Backed by India’s <span class="it">incubators.</span></h2></div>
+        <p>Fourteen incubation and innovation centres are bringing their founders and leadership teams to the summit. <a href="#partners" style="color:var(--ember)">Meet all collaborators →</a></p>
+      </div>
+    </div>
+    <div class="logo-strip"><div class="track" id="logo-track"></div></div>
+  </section>
+
+  <section class="sec" id="sponsor" style="background:#0e0a09;border-block:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">For brands &amp; sponsors</div><h2>Put your brand in front of the <span class="it">right people.</span></h2></div>
+        <p>Sponsors reach a concentrated audience of decision-makers, entrepreneurs, investors and founders, at the venue and across the summit’s digital and media channels.</p>
+      </div>
+      <div class="benefits">
+        <div class="bf"><div class="n">01</div><h4>Brand visibility</h4><p>Prominent positioning across stage, LED screens and on-ground branding.</p></div>
+        <div class="bf"><div class="n">02</div><h4>Business networking</h4><p>Direct interaction with entrepreneurs, investors, CXOs and industry leaders.</p></div>
+        <div class="bf"><div class="n">03</div><h4>Lead generation</h4><p>Connect with potential customers, partners and business prospects.</p></div>
+        <div class="bf"><div class="n">04</div><h4>Brand authority</h4><p>Associate your company with a high-profile business and startup platform.</p></div>
+        <div class="bf"><div class="n">05</div><h4>On-ground engagement</h4><p>Meet delegates through activations and exhibition opportunities.</p></div>
+        <div class="bf"><div class="n">06</div><h4>Media &amp; digital</h4><p>Social posts, emailers, press releases and partner publications.</p></div>
+      </div>
+      <div class="netimg"><div class="bg"></div><div><p>More than an event. <span class="it">A platform for what’s next.</span></p><a class="btn btn-red" style="margin-top:24px" href="#contact" data-scroll="contact">Talk to the organisers</a></div></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="eyebrow">FAQ</div>
+      <h2 style="font-size:clamp(38px,5vw,64px);margin:18px 0 30px">Good to know.</h2>
+      <div class="faq">
+        <details><summary>Who can apply to pitch?</summary><p>Founders at any stage, from idea to growth. Student founders and first-time entrepreneurs are welcome. Shortlisted startups are contacted directly by the organising team.</p></details>
+        <details><summary>Is there a fee to apply for a pitch slot?</summary><p>Applying is free. Shortlisted founders attend the summit with a valid pass; the Founder Pass is built for them.</p></details>
+        <details><summary>Where exactly is the summit?</summary><p>The Auditorium at Bharat Mandapam, Pragati Maidan, New Delhi. The nearest metro station is Supreme Court on the Blue Line.</p></details>
+        <details><summary>What are the timings?</summary><p>22 December 2026, from 9:00 AM to 6:00 PM. Arrive by 8:30 AM for registration and entry.</p></details>
+        <details><summary>How do I become a sponsor or partner?</summary><p>Call or email the event organisers listed below. They will share the sponsorship deck and tailor a package for your brand.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec contact" id="contact">
+    <div class="bg" role="img" aria-label="Bharat Mandapam entrance at night"></div>
+    <div class="wrap cgrid">
+      <div>
+        <div class="eyebrow">Event organiser</div>
+        <h2 style="margin-top:18px">Let’s talk.</h2>
+        <p style="color:#d6c7ba;max-width:44ch;margin-top:18px">Questions about pitching, passes, sponsorship or partnerships? Reach the organising team at Prakhar Enterprises directly.</p>
+      </div>
+      <div class="people">
+        <div class="person"><div><h4>Asmit Prakhar</h4><small>Event organiser</small></div><a href="tel:+917277775111">+91 72777 75111</a></div>
+        <div class="person"><div><h4>Komal Khushi Goyal</h4><small>Event organiser</small></div><a href="tel:+917023816675">+91 70238 16675</a></div>
+        <div class="person"><div><h4>Email</h4><small>Sponsorship &amp; general enquiries</small></div><a href="mailto:founder@prakharenterprises.in">founder@prakharenterprises.in</a></div>
+        <div class="person"><div><h4>Website</h4><small>Prakhar Enterprises</small></div><a href="https://www.prakharenterprises.in/">prakharenterprises.in</a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= LEADERS ================= -->
+<div data-view="leaders" hidden>
+  <section class="phead">
+    <div class="bg"></div>
+    <div class="wrap">
+      <div class="crumb"><a href="#home">Home</a> / Leaders</div>
+      <h1>Distinguished leaders <span class="it">at the summit.</span></h1>
+      <p>The chief guest, confirmed leaders, investors and founders joining Startup Business Summit 2026 at Bharat Mandapam.</p>
+    </div>
+  </section>
+  <section class="sec" style="padding-top:60px">
+    <div class="wrap">
+      <div class="subhead" style="margin-top:0;margin-bottom:18px">Chief guest</div>
+      <div id="chief-full"></div>
+      <div class="subhead">Confirmed distinguished leaders</div>
+      <div class="lgrid" id="confirmed-full"></div>
+      <div class="subhead">Video bites</div>
+      <div class="vcards wide" id="vids-leaders"></div>
+      <div class="subhead">Additional distinguished guests, investors &amp; industry leaders</div>
+      <div class="chips" role="group" aria-label="Filter leaders" id="chips"></div>
+      <div class="lgrid small" id="guests"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= PARTNERS ================= -->
+<div data-view="partners" hidden>
+  <section class="phead">
+    <div class="bg"></div>
+    <div class="wrap">
+      <div class="crumb"><a href="#home">Home</a> / Collaborators</div>
+      <h1>Incubation teams <span class="it">&amp; leadership</span> joining.</h1>
+      <p>Pioneering incubators and innovation centres driving India’s startup ecosystem, bringing their founders to Bharat Mandapam.</p>
+    </div>
+  </section>
+  <section class="sec" style="padding-top:60px">
+    <div class="wrap">
+      <div class="logos" id="logos"></div>
+      <div class="org">
+        <img src="/img/logo.png" alt="Prakhar Enterprises logo">
+        <div><div class="eyebrow">Organised by</div><h3 style="margin-top:10px">Prakhar Enterprises</h3><p>Event organiser for Startup Business Summit 2026 at Bharat Mandapam, New Delhi.</p></div>
+        <a class="btn btn-ghost" href="https://www.prakharenterprises.in/">Visit website</a>
+      </div>
+      <div class="pitch-band" style="margin-top:20px">
+        <p>Run an incubator or accelerator? <span class="it">Bring your cohort.</span></p>
+        <a class="btn btn-red" href="#home" data-scroll="contact">Become a collaborator</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= PITCH ================= -->
+<div data-view="pitch" hidden>
+  <section class="phead">
+    <div class="bg"></div>
+    <div class="wrap">
+      <div class="crumb"><a href="#home">Home</a> / Pitch your idea</div>
+      <h1>Pitch your idea <span class="it">at Bharat Mandapam.</span></h1>
+      <p>Three short steps. Shortlisted founders present live on 22 December 2026 to investors, founders and industry leaders.</p>
+    </div>
+  </section>
+  <div class="wrap pitch-layout">
+    <div class="formcard">
+      <div class="progress" id="progress">
+        <div class="cur"><div class="bar"><i></i></div><small>01 · You</small></div>
+        <div><div class="bar"><i></i></div><small>02 · Startup</small></div>
+        <div><div class="bar"><i></i></div><small>03 · Pitch</small></div>
+        <div><div class="bar"><i></i></div><small>04 · Review</small></div>
+      </div>
+      <div class="signbar" id="pitch-signbar"></div>
+      <form id="pitch-form" novalidate>
+        <div class="fstep" data-step="0">
+          <h3>About you</h3><p>The founder we should contact if you’re shortlisted.</p>
+          <div class="fgrid">
+            <div class="field"><label for="p-name">Full name <em>*</em></label><input type="text" id="p-name" name="name" autocomplete="name" required><span class="err"></span></div>
+            <div class="field"><label for="p-role">Your role <em>*</em></label><input type="text" id="p-role" name="role" placeholder="Founder & CEO" required><span class="err"></span></div>
+            <div class="field"><label for="p-email">Email <em>*</em></label><input type="email" id="p-email" name="email" autocomplete="email" required><span class="err"></span></div>
+            <div class="field"><label for="p-phone">Phone <em>*</em></label><input type="tel" id="p-phone" name="phone" autocomplete="tel" placeholder="10-digit mobile" required><span class="err"></span></div>
+            <div class="field"><label for="p-city">City <em>*</em></label><input type="text" id="p-city" name="city" required><span class="err"></span></div>
+            <div class="field"><label for="p-linkedin">LinkedIn</label><input type="url" id="p-linkedin" name="linkedin" placeholder="https://linkedin.com/in/…"><span class="err"></span></div>
+          </div>
+        </div>
+        <div class="fstep" data-step="1" hidden>
+          <h3>Your startup</h3><p>Keep it sharp. The jury reads every word.</p>
+          <div class="fgrid">
+            <div class="field"><label for="p-startup">Startup name <em>*</em></label><input type="text" id="p-startup" name="startup" required><span class="err"></span></div>
+            <div class="field"><label for="p-sector">Sector <em>*</em></label>
+              <select id="p-sector" name="sector" required><option value="">Choose a sector</option><option>AI &amp; Deep Tech</option><option>Fintech</option><option>D2C &amp; Consumer</option><option>Health &amp; Biotech</option><option>EdTech</option><option>Agritech</option><option>Climate &amp; Energy</option><option>SaaS &amp; B2B</option><option>Manufacturing</option><option>Other</option></select><span class="err"></span></div>
+            <div class="field full"><label>Stage <em>*</em></label>
+              <div class="seg" id="p-stage">
+                <label><input type="radio" name="stage" value="Idea" required><span>Idea</span></label>
+                <label><input type="radio" name="stage" value="Prototype / MVP"><span>Prototype / MVP</span></label>
+                <label><input type="radio" name="stage" value="Early revenue"><span>Early revenue</span></label>
+                <label><input type="radio" name="stage" value="Growth"><span>Growth</span></label>
+              </div><span class="err" id="stage-err"></span></div>
+            <div class="field full"><label for="p-oneliner">One-line pitch <em>*</em></label><input type="text" id="p-oneliner" name="oneliner" maxlength="140" placeholder="We help ___ do ___ by ___" required><span class="hint"><span id="ol-count">0</span>/140</span><span class="err"></span></div>
+            <div class="field full"><label for="p-problem">Problem &amp; solution <em>*</em></label><textarea id="p-problem" name="problem" placeholder="What problem, for whom, and how you solve it." required></textarea><span class="err"></span></div>
+            <div class="field"><label for="p-team">Team size</label><input type="number" id="p-team" name="team" min="1" placeholder="e.g. 4"><span class="err"></span></div>
+            <div class="field"><label for="p-ask">Funding ask (₹ lakh)</label><input type="number" id="p-ask" name="ask" min="0" placeholder="e.g. 50"><span class="err"></span></div>
+          </div>
+        </div>
+        <div class="fstep" data-step="2" hidden>
+          <h3>Your pitch</h3><p>Share your deck so the team can review it before shortlisting.</p>
+          <div class="fgrid">
+            <div class="field full"><label for="p-deck">Pitch deck link <em>*</em></label><input type="url" id="p-deck" name="deck" placeholder="Google Drive / Docsend link" required><span class="hint">Set sharing to “Anyone with the link can view”.</span><span class="err"></span></div>
+            <div class="field full"><label for="p-video">Demo or pitch video link</label><input type="url" id="p-video" name="video" placeholder="YouTube / Loom (optional)"><span class="err"></span></div>
+            <div class="field full"><label for="p-why">Why should you pitch at SBS 2026? <em>*</em></label><textarea id="p-why" name="why" required></textarea><span class="err"></span></div>
+            <div class="field full"><label for="p-source">How did you hear about us?</label><select id="p-source" name="source"><option value="">Select</option><option>Incubator / college</option><option>Instagram</option><option>LinkedIn</option><option>WhatsApp</option><option>A friend</option><option>Other</option></select></div>
+            <label class="check full"><input type="checkbox" id="p-consent" name="consent" required><span>I confirm the details are accurate and agree to be contacted by the organising team about my application.</span></label>
+            <span class="err full" id="consent-err"></span>
+          </div>
+        </div>
+        <div class="fstep" data-step="3" hidden>
+          <h3>Review &amp; submit</h3><p>Check everything once. You can go back to edit.</p>
+          <dl class="review" id="review"></dl>
+        </div>
+        <div class="fstep" data-step="4" hidden>
+          <div class="success">
+            <div class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+            <h3>Application received.</h3>
+            <div class="id" id="app-id">SBS26-P-0000</div>
+            <p>Save this ID. If you’re shortlisted, the organising team will contact you by email and phone before the summit.</p>
+            <div class="ctas" style="justify-content:center"><a class="btn btn-red" href="#tickets">Get your Founder Pass</a><button class="btn btn-ghost" type="button" id="copy-id">Copy ID</button></div>
+          </div>
+        </div>
+        <div class="fnav" id="fnav">
+          <button type="button" class="btn btn-ghost" id="back" hidden>Back</button>
+          <button type="button" class="btn btn-red" id="next" style="margin-left:auto">Continue</button>
+        </div>
+      </form>
+    </div>
+    <aside class="aside">
+      <div class="acard"><h4>What the jury looks for</h4><ul><li>A real problem with a clear customer</li><li>Why your team can win</li><li>Traction, even early</li><li>A specific, sensible ask</li></ul></div>
+      <div class="acard"><h4>Key dates</h4><ul><li>Applications open now</li><li>Shortlisted founders are contacted before the summit</li><li>Live pitches: 22 Dec 2026, Bharat Mandapam</li></ul></div>
+      <div class="acard"><h4>Questions?</h4><ul><li>Asmit Prakhar · 72777 75111</li><li>Komal Khushi Goyal · 70238 16675</li></ul></div>
+    </aside>
+  </div>
+</div>
+
+<!-- ================= TICKETS ================= -->
+<div data-view="tickets" hidden>
+  <section class="phead">
+    <div class="bg"></div>
+    <div class="wrap">
+      <div class="crumb"><a href="#home">Home</a> / Tickets</div>
+      <h1>Your pass to <span class="it">Bharat Mandapam.</span></h1>
+      <p>22 December 2026 · 9:00 AM – 6:00 PM · Auditorium, Bharat Mandapam, Pragati Maidan, New Delhi.</p>
+    </div>
+  </section>
+  <div class="wrap">
+    <div class="tiers" id="tiers"></div>
+    <div class="tinfo">
+      <div><h4>Instant e-pass</h4><p>Your pass with a unique ID appears right after checkout. Carry a government photo ID to the venue.</p></div>
+      <div><h4>Group bookings</h4><p>Booking for a team, incubator cohort or college? Call the organisers for group pricing.</p></div>
+      <div><h4>Getting there</h4><p>Supreme Court metro station (Blue Line) is the closest. Parking is available at Bharat Mandapam.</p></div>
+    </div>
+  </div>
+</div>
+<!-- ================= ACCOUNT ================= -->
+<div data-view="account" hidden>
+  <section class="phead">
+    <div class="bg"></div>
+    <div class="wrap">
+      <div class="crumb"><a href="#home">Home</a> / My account</div>
+      <h1 id="acc-hello">Your <span class="it">summit desk.</span></h1>
+      <p>Your passes and pitch applications for Startup Business Summit 2026, in one place.</p>
+    </div>
+  </section>
+  <div class="wrap" id="acc-body"></div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Prakhar Enterprises · Startup Business Summit 2026 · <span class="deva">भारत मंडपम</span>, New Delhi</span>
+    <span><a href="#pitch">Pitch</a> · <a href="#tickets">Tickets</a> · <a href="#leaders">Leaders</a> · <a href="#partners">Collaborators</a></span>
+  </div>
+</footer>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="sheet">
+    <button class="x" id="m-close" aria-label="Close">×</button>
+    <div id="m-step-1">
+      <h3 id="m-title">Delegate Pass</h3>
+      <div class="sub" id="m-sub">Startup Business Summit 2026 · 22 Dec</div>
+      <div class="fgrid">
+        <div class="field full"><label>Number of passes</label><div class="qty"><button type="button" id="q-minus" aria-label="Fewer passes">−</button><output id="q-val">1</output><button type="button" id="q-plus" aria-label="More passes">+</button></div></div>
+        <div class="field full"><label for="t-name">Attendee name <em>*</em></label><input type="text" id="t-name" autocomplete="name"><span class="err"></span></div>
+        <div class="field"><label for="t-email">Email <em>*</em></label><input type="email" id="t-email" autocomplete="email"><span class="err"></span></div>
+        <div class="field"><label for="t-phone">Phone <em>*</em></label><input type="tel" id="t-phone" autocomplete="tel"><span class="err"></span></div>
+        <div class="field full"><label for="t-promo">Promo code</label><div class="promo"><input type="text" id="t-promo" placeholder="Have a code?"><button type="button" class="btn btn-ghost" id="t-apply">Apply</button></div><span class="hint" id="promo-msg"></span></div>
+      </div>
+      <div class="sum" id="sum"></div>
+      <div class="auth-err" id="pay-err" role="alert"></div>
+      <button class="btn btn-red" style="width:100%;justify-content:center;margin-top:12px" id="to-pay">Pay securely</button>
+      <p class="hint" style="margin-top:12px;text-align:center">Payments are processed by Razorpay. UPI, cards and netbanking accepted.</p>
+    </div>
+    <div id="m-step-3" hidden>
+      <h3 id="pass-h">You’re in.</h3>
+      <div class="sub">Show this QR at the entry gate with a photo ID.</div>
+      <div class="pass">
+        <div class="top"><small>Startup Business Summit 2026</small><b id="pass-type">Delegate Pass</b></div>
+        <div class="mid">
+          <dl>
+            <div><dt>Name</dt><dd id="pass-name">—</dd></div>
+            <div><dt>Passes</dt><dd id="pass-qty">1</dd></div>
+            <div><dt>Date</dt><dd>22 Dec 2026</dd></div>
+            <div><dt>Gate opens</dt><dd>8:30 AM</dd></div>
+            <div style="grid-column:1/-1"><dt>Venue</dt><dd>Auditorium, Bharat Mandapam</dd></div>
+          </dl>
+          <div id="qr" class="qr" role="img" aria-label="Pass QR code"></div>
+        </div>
+        <div class="tid" id="pass-id">SBS26-T-0000</div>
+      </div>
+      <button class="btn btn-ghost" style="width:100%;justify-content:center" id="copy-tid">Copy pass ID</button>
+    </div>
+  </div>
+</div>
+<div class="modal" id="auth" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+  <div class="sheet" style="width:min(460px,100%)">
+    <button class="x" id="auth-close" aria-label="Close">×</button>
+    <h3 id="auth-title">Welcome back</h3>
+    <div class="sub" id="auth-sub">Sign in to book passes and track your pitch.</div>
+    <div class="authtabs" role="tablist">
+      <button type="button" role="tab" aria-selected="true" data-mode="in">Sign in</button>
+      <button type="button" role="tab" aria-selected="false" data-mode="up">Create account</button>
+    </div>
+    <div class="auth-why" id="auth-why" hidden></div>
+    <form id="auth-form" novalidate>
+      <div class="fgrid" style="grid-template-columns:1fr">
+        <div class="field" data-up hidden><label for="a-name">Full name</label><input type="text" id="a-name" autocomplete="name"></div>
+        <div class="field"><label for="a-email">Email</label><input type="email" id="a-email" autocomplete="email"></div>
+        <div class="field" data-up hidden><label for="a-phone">Mobile number</label><input type="tel" id="a-phone" autocomplete="tel" placeholder="10-digit mobile"></div>
+        <div class="field"><label for="a-pass">Password</label><div class="pw"><input type="password" id="a-pass" autocomplete="current-password"><button type="button" id="pw-toggle">Show</button></div><span class="hint" data-up hidden>At least 8 characters.</span></div>
+      </div>
+      <div class="auth-err" id="auth-err" role="alert"></div>
+      <button class="btn btn-red" type="submit" id="auth-submit" style="width:100%;justify-content:center;margin-top:10px">Sign in</button>
+    </form>
+    <p class="hint" id="auth-forgot" style="margin-top:14px">Forgot your password? Call the organisers on +91 72777 75111 to reset it.</p>
+  </div>
+</div>
+<div class="modal vmodal" id="vmodal" role="dialog" aria-modal="true" aria-labelledby="vm-title">
+  <div class="vsheet">
+    <button class="x" id="vm-close" aria-label="Close video">×</button>
+    <video id="vm-video" controls playsinline preload="none"></video>
+    <div class="vm-cap"><b id="vm-title"></b><span id="vm-role"></span></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+<script src="/vendor/qrcode.js" defer></script>
+<script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "sbs-summit-2026",
+  "version": "1.0.0",
+  "description": "Startup Business Summit 2026 — Bharat Mandapam",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --env-file-if-exists=.env --watch server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.22.3",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "qrcode-generator": "^1.4.4"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20.10"
+  }
+}

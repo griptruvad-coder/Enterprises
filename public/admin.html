@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin · SBS 2026</title>
+<link rel="icon" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/admin.css">
+</head>
+<body class="admin">
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/img/logo.png" alt="Prakhar Enterprises logo"><span><b>SBS 2026</b><small>Admin dashboard</small></span></a>
+    <div class="links" style="display:flex"><a href="/">View site</a><button type="button" class="auth-btn" id="logout" hidden>Sign out</button></div>
+  </div>
+</header>
+
+<main class="wrap adm">
+  <section id="gate" hidden>
+    <div class="formcard" style="max-width:440px;margin:80px auto">
+      <h3 style="font-size:32px">Admin sign in</h3>
+      <p class="hint" style="margin:6px 0 22px">Only organiser accounts listed in ADMIN_EMAILS can open this page.</p>
+      <form id="gate-form" novalidate>
+        <div class="fgrid" style="grid-template-columns:1fr">
+          <div class="field"><label for="g-email">Email</label><input type="email" id="g-email" autocomplete="email"></div>
+          <div class="field"><label for="g-pass">Password</label><input type="password" id="g-pass" autocomplete="current-password"></div>
+        </div>
+        <div class="auth-err" id="g-err" role="alert"></div>
+        <button class="btn btn-red" type="submit" style="width:100%;justify-content:center;margin-top:10px">Sign in</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="dash" hidden>
+    <div class="adm-head">
+      <div><div class="eyebrow">Startup Business Summit 2026</div><h1>Organiser desk</h1></div>
+      <div class="exports"><span class="hint">Download CSV:</span>
+        <a class="btn btn-ghost" href="/api/admin/export/tickets.csv">Passes</a>
+        <a class="btn btn-ghost" href="/api/admin/export/pitches.csv">Pitches</a>
+        <a class="btn btn-ghost" href="/api/admin/export/subscribers.csv">Subscribers</a>
+      </div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" aria-selected="true" data-tab="checkin">Gate check-in</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="pitches">Pitch applications</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="tickets">Passes sold</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="subs">Subscribers</button>
+      <button type="button" role="tab" aria-selected="false" data-tab="users">Password reset</button>
+    </div>
+
+    <div data-panel="checkin">
+      <form id="ci-form" class="ci" novalidate>
+        <label for="ci-id" class="hint">Pass ID (printed under the QR code)</label>
+        <div class="promo"><input type="text" id="ci-id" placeholder="SBS26-T-XXXXXXXX" autocomplete="off" autocapitalize="characters"><button class="btn btn-red" type="submit">Check in</button></div>
+      </form>
+      <div id="ci-result" role="status"></div>
+    </div>
+
+    <div data-panel="pitches" hidden>
+      <div class="bar"><select id="p-filter" aria-label="Filter by status"><option value="">All statuses</option><option value="review">Under review</option><option value="shortlisted">Shortlisted</option><option value="rejected">Not selected</option></select><span class="hint" id="p-count"></span></div>
+      <div id="p-list"></div>
+    </div>
+
+    <div data-panel="tickets" hidden>
+      <div class="bar"><input type="text" id="t-search" placeholder="Search by pass ID, name, email or phone" aria-label="Search passes"><span class="hint" id="t-count"></span></div>
+      <div class="tablewrap"><table><thead><tr><th>Pass ID</th><th>Pass</th><th>Qty</th><th>Name</th><th>Contact</th><th>Paid</th><th>Booked</th><th>Entry</th></tr></thead><tbody id="t-body"></tbody></table></div>
+    </div>
+
+    <div data-panel="subs" hidden>
+      <div class="tablewrap"><table><thead><tr><th>Email</th><th>Joined</th></tr></thead><tbody id="s-body"></tbody></table></div>
+    </div>
+    <div data-panel="users" hidden>
+      <form id="rs-form" class="ci" novalidate>
+        <label for="rs-email" class="hint">Account email. Confirm the caller’s registered phone number before resetting.</label>
+        <div class="promo"><input type="email" id="rs-email" placeholder="name@example.com" style="font-family:var(--body);font-size:16px;letter-spacing:0"><button class="btn btn-red" type="submit">Reset password</button></div>
+      </form>
+      <div id="rs-result" role="status" style="margin-top:20px;max-width:520px"></div>
+    </div>
+  </section>
+</main>
+<div class="toast" id="toast" role="status"></div>
+<script src="/admin.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+# Render Blueprint: New > Blueprint > pick this repo.
+# SQLite needs a persistent disk, which Render only offers on paid web services (Starter plan or above).
+# On the free plan the disk is wiped on every deploy/restart and you WILL lose all accounts, pitches and tickets.
+services:
+  - type: web
+    name: sbs-summit-2026
+    runtime: node
+    plan: starter
+    region: singapore
+    buildCommand: npm ci --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    disk:
+      name: sbs-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: DB_PATH
+        value: /var/data/sbs.db
+      - key: APP_ORIGIN
+        sync: false        # e.g. https://sbs-summit-2026.onrender.com (add your custom domain too, comma-separated)
+      - key: ADMIN_EMAILS
+        sync: false        # e.g. founder@prakharenterprises.in
+      - key: RAZORPAY_KEY_ID
+        sync: false
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+      - key: RAZORPAY_WEBHOOK_SECRET
+        sync: false
+      - key: PROMO_CODES
+        sync: false        # optional, e.g. SBS10:10
+      - key: TIER_PRICES
+        sync: false        # optional, e.g. delegate:1499,founder:2999,vip:9999
