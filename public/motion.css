@@ -132,9 +132,9 @@ html.seen .pl-in{display:none}
 .burger[aria-expanded="true"] span:nth-child(2){opacity:0}
 .burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-4.1px) rotate(-45deg)}
 
-@media (max-width:1060px) and (min-width:761px){.links a:not(.btn){padding:9px 10px;font-size:13.5px}.brand small{display:none}}
+@media (max-width:1100px) and (min-width:961px){.links a:not(.btn){padding:9px 10px;font-size:13.5px}.brand small{display:none}}
 
-@media (max-width:760px){
+@media (max-width:960px){
   .nav{top:10px}
   .nav .wrap{height:60px;width:calc(100% - 20px);padding:0 8px 0 12px;gap:8px}
   .nav .wrap::before{border-radius:20px}
@@ -283,10 +283,27 @@ footer{background:rgba(48,28,20,.95)}
 input[type=text],input[type=email],input[type=tel],input[type=number],input[type=url],input[type=password],select,textarea{background:#2f1b13;border-color:#7a5240}
 .sheet,.menu{background:#45291e;border-color:#7a5240}
 .authtabs,.review div,.signbar,.qty button,.paytabs button,.seg label{background:#2f1b13}
-@media (max-width:760px){
+@media (max-width:960px){
   .nav .links{background:linear-gradient(180deg,rgba(58,34,25,.93),rgba(58,34,25,.97)),var(--bg-photo),var(--bg-fallback);background-size:cover;background-position:center}
   .links a:not(.btn){font-family:var(--display);font-size:30px;font-weight:600}
   body.menu-open .nav .wrap::before{background:rgba(70,40,29,.95)}
 }
 .light{--ink:#fbf3ea;--panel:#ffffff;--bone:#2a1810;--muted:#6e5a4d;--gold:#a8742a;--copper:#c9472a;--line:#ead9c6;background-color:#fbf3ea}
 .hero .hero-title .l2,.hero h1 .l2,.hero h1 .yr{font-style:normal}
+
+/* nav items never wrap */
+.links a,.links .btn,.auth-btn,.avatar,.nav-cta-m,.btn{white-space:nowrap}
+
+/* ---------- preloader: Nataraja at Bharat Mandapam ---------- */
+.pl-in{width:min(300px,78vw)}
+.pl-arch{position:relative;width:min(200px,52vw);aspect-ratio:200/240;margin:0 auto}
+.pl-arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;
+  border-radius:50% 50% 0 0 / 41.7% 41.7% 0 0;-webkit-mask-image:linear-gradient(180deg,#000 75%,transparent);mask-image:linear-gradient(180deg,#000 75%,transparent);
+  opacity:0;transform:scale(1.12);animation:natIn 1.3s .15s cubic-bezier(.2,.8,.2,1) forwards;filter:drop-shadow(0 0 30px rgba(240,194,122,.35))}
+.pl-arch svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.pl-arch path{fill:none;stroke:var(--gold);stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-dasharray:820;stroke-dashoffset:820;animation:draw 1.5s cubic-bezier(.6,0,.2,1) forwards}
+.pl-arch::after{content:"";position:absolute;left:50%;top:38%;width:70%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(240,194,122,.35),transparent 65%);z-index:-1;animation:glowPulse 2.4s ease-in-out infinite}
+.pl-deva{margin-top:18px;font-size:30px}
+.pl-name{margin-top:6px;font-size:18px;font-weight:500}
+@keyframes natIn{to{opacity:1;transform:none}}
+@keyframes glowPulse{50%{opacity:.55;transform:translate(-50%,-50%) scale(1.12)}}

@@ -8,7 +8,7 @@
 
   /* ---------- preloader ---------- */
   const seen = html.classList.contains('seen');
-  const minTime = reduce ? 0 : seen ? 250 : 1500;
+  const minTime = reduce ? 0 : seen ? 250 : 1900;
   const t0 = performance.now();
   let done = false;
   function finishLoad() {
@@ -94,7 +94,7 @@
   new MutationObserver(syncMenu).observe(links, { attributes: true, attributeFilter: ['class'] });
   links.addEventListener('click', e => { if (e.target.closest('a[href^="#"]')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.focus(); } });
-  addEventListener('resize', () => { if (innerWidth > 760 && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
+  addEventListener('resize', () => { if (innerWidth > 960 && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
 
   /* ---------- hero embers (copper sparks rising) ---------- */
   const cv = $('#embers');
